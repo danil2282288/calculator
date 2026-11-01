@@ -1,5 +1,4 @@
 def main():
-    # Ввод чисел с обработкой ошибок
     try:
         num1 = float(input("Введите первое число: "))
         num2 = float(input("Введите второе число: "))
@@ -17,7 +16,6 @@ def main():
 
     choice = input("Введите номер выбранной категории (1-6): ")
 
-    # Арифметические операции
     if choice == '1':
         print("Выберите конкретную операцию:")
         print("a. + (сложение)")
@@ -61,8 +59,7 @@ def main():
             print(f"{num1} ** {num2} = {result}")
         else:
             print("Некорректная операция.")
-    
-    # Операторы сравнения
+
     elif choice == '2':
         print(f"{num1} == {num2} : {num1 == num2}")
         print(f"{num1} != {num2} : {num1 != num2}")
@@ -71,7 +68,6 @@ def main():
         print(f"{num1} >= {num2} : {num1 >= num2}")
         print(f"{num1} <= {num2} : {num1 <= num2}")
 
-    # Логические операторы
     elif choice == '3':
         condition1 = num1 > 0
         condition2 = num2 > 0
@@ -79,7 +75,6 @@ def main():
         print(f"condition1 or condition2: {condition1 or condition2}")
         print(f"not condition1: {not condition1}")
 
-    # Побитовые операторы
     elif choice == '4':
         a = int(num1)
         b = int(num2)
@@ -90,7 +85,6 @@ def main():
         print(f"{a} << 2 : {a << 2}")
         print(f"{a} >> 2 : {a >> 2}")
 
-    # Операторы принадлежности
     elif choice == '5':
         sample_list = [1, 2, 3, 4, 5]
         if num1 in sample_list:
@@ -102,7 +96,6 @@ def main():
         else:
             print(f"{num2} принадлежит списку {sample_list}")
 
-    # Операторы тождественности
     elif choice == '6':
         a = num1
         b = num2
